@@ -23,7 +23,7 @@ import com.PatientDetailsApp.model.PatientDetails;
 public class PatientController {
 	@Autowired
 	private PatientRepository repository;
-	
+	//adding patients
 	@PostMapping("/addPatient")
 	public String addPatient(@RequestBody PatientDetails patient ) {
 		repository.save(patient);
